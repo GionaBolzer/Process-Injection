@@ -1,9 +1,11 @@
 /* XOR encrypt with 0x2a*/
 using System;
-class Program{
-    static void Main(){
+class Program
+{
+    static void Main()
+    {
 
-    byte key = 0x2a;
+        byte key = 0x2a;
 
         byte[] buf = new byte[842] {0xdb,0xdb,0xd9,0x74,0x24,0xf4,
 0xbb,0xdb,0xbd,0x7b,0x26,0x5e,0x29,0xc9,0xb1,0xcc,0x31,0x5e,
@@ -96,7 +98,7 @@ class Program{
             // put string wiht payload in correct format
             hex.AppendFormat("0x{0:x2}, ", b);
             if ((a % 12 == 0) && !(a == 0))
-            { 
+            {
                 hex.Append("\n");
             }
             a++;
