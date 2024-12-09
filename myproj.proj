@@ -1,0 +1,6 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <UsingTask TaskName="SimpleTask" AssemblyFile="c:\Tools\msbuild\TaskMSbuild.dll" />
+    <Target Name="MyTarget">
+        <SimpleTask />
+    </Target>
+</Project>
