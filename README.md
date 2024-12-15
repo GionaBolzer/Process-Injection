@@ -1,1 +1,2 @@
-Implementation of the [this](https://www.gionabolzer.com/blog/post1/) arcticle
+The objective is to design a process injection payload that utilizes low-level Win32 API calls to bypass Microsoft Defender’s mitigation mechanisms and AppLocker restrictions. Specifically, this payload leverages the NtCreateSection and NtMapViewSection functions to inject shellcode into an unmanaged section of memory within the current process, and then maps this shellcode into the virtual address space of a target process, such as explorer.exe. 
+[Here](https://www.gionabolzer.com/blog/post1/) the arcticle
